@@ -3,8 +3,11 @@ import numpy as np
 
 def compute_days(year: str, month: str) -> np.datetime64:
     """Return the number of days (in np.datetime64 object) of a specific month and year.
+
     Note: The month's template should be a string with two characters (between 01 to 12).
-    :param year: Year's string. 
+    Got help from:
+    https://www.geeksforgeeks.org/count-the-number-of-days-of-a-specific-month-using-numpy/
+    :param year: Year's string.
     :param month: Month string with two characters between 01 to 12.
     :return: The number of days of a specific month and year.
     """
