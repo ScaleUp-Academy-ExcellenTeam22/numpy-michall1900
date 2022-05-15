@@ -4,7 +4,8 @@ from matplotlib.pyplot import imsave
 
 def main_french_flag() -> None:
     """Create an image of the french flag using NumPy.
-
+    Got help from:
+    https://betterprogramming.pub/lets-draw-5-flags-in-numpy-ef2953697ef4
     :return: None.
     """
     french_flag_array = np.ones((300, 600, 3))
