@@ -1,4 +1,4 @@
-from numpy import eye
+from numpy import identity
 
 
 def ones_on_a_diagonal() -> None:
@@ -6,7 +6,7 @@ def ones_on_a_diagonal() -> None:
 
     :return: None.
     """
-    matrix = eye(3)
+    matrix = identity(3)
     print(matrix)
 
 
