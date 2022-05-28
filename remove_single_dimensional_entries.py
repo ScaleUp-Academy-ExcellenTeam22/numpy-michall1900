@@ -6,7 +6,7 @@ def remove_single_dimensional_entries(array: NDArray) -> NDArray:
     """Remove single-dimensional entries from a specified shape.
 
     :param array: Any kind of array.
-    :return: Same array after removing single-dimensional entries.
+    :return: Same array after removing single-dimensional entries from it.
     """
     return squeeze(array)
 
