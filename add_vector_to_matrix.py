@@ -8,11 +8,9 @@ def add_vector_to_matrix(vector: ArrayLike, matrix: NDArray) -> None:
     :param vector: Array with one row.
     :param matrix: Any kind of matrix.
     :return: None.
+    :except ValueError: Throw an exception if the vector's size is different from the matrix's row size.
     """
-    try:
-        matrix += vector
-    except ValueError:
-        print("Different size of vector and matrix.")
+    matrix += vector
 
 
 def main_add_vector_to_matrix() -> None:
@@ -20,11 +18,14 @@ def main_add_vector_to_matrix() -> None:
 
     :return: None.
     """
-    my_matrix = zeros((2, 3))
+    my_matrix = zeros((2, 5))
     print("Before adding vector , matrix:\n", my_matrix)
     my_vector = ones(5)
-    add_vector_to_matrix(my_vector, my_matrix)
-    print("After adding vector , matrix:\n", my_matrix)
+    try:
+        add_vector_to_matrix(my_vector, my_matrix)
+        print("After adding vector , matrix:\n", my_matrix)
+    except ValueError:
+        print("Different size of vector and matrix.")
 
 
 if __name__ == '__main__':
